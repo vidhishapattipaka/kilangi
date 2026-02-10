@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<i class="fa-solid fa-cart-shopping cart-icon"></i>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kilangi Jewellery</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<script>
+function toggleGallery() {
+  const gallery = document.getElementById("galleryContent");
+  gallery.style.display =
+    gallery.style.display === "block" ? "none" : "block";
+}
+</script>
+
+<body>
+  <div class="mobile-container">
+
+   
+    <header class="header">
+      <h1>Kilangi</h1>
+      <input type="text" placeholder="Search for Earrings.." />
+    </header>
+
+   
+<div class="hero-image">
+
+  <img src="jwellery.jpg" alt="Jewellery">
+
+  <div class="hero-overlay">
+    <h2>Because You<br>Deserve to Feel<br><span>Timeless</span></h2>
+    <p>Thoughtfully designed gold & silver jewellery</p>
+    <button>Explore the Elegance</button>
+  </div>
+
+</div>
+<br>
+<section class="features">
+  <div class="feature-box">Timeless<br>Design</div>
+  <div class="feature-box">Lightweight<br>Comfort</div>
+  <div class="feature-box">Anti-Fade<br>Polish</div>
+</section>
+
+
+   <div class="product-card">
+  <div class="product-img">
+    <img src="bestseller.jpg" alt="Twisted Petal Gold Bracelet">
+  </div>
+
+  <h4>Twisted Petal Gold Bracelet</h4>
+  <p class="price">₹79,904 <span>₹99,904</span></p>
+  <button class="dark-btn">Shop Now</button>
+</div>
+<div class="product-detail">
+<h2>Twisted Petal Gold Bracelet</h2>
+<p>₹79,904</p>
+<button onclick="addToCart()">Add to Cart</button>
+</div>
+
+<section class="collection">
+  <h2>Explore Our Collection</h2>
+
+  <div class="grid">
+
+    <div class="category">
+      <img src="rings1.jpg" alt="Rings">
+      <p>Rings</p>
+    </div>
+
+    <div class="category">
+      <img src="earrings1.jpg" alt="Earrings">
+      <p>Earrings</p>
+    </div>
+
+    <div class="category">
+      <img src="pendant2.jpg" alt="Pendant">
+      <p>Pendants</p>
+    </div>
+
+    <div class="category">
+      <img src="bangles.jpg" alt="Bangles">
+      <p>Bangles</p>
+    </div>
+
+    <div class="category">
+      <img src="necklace.jpg" alt="Necklace">
+      <p>Necklace</p>
+    </div>
+
+    <div class="category">
+      <img src="bracelet1.png" alt="Bracelets">
+      <p>Bracelets</p>
+    </div>
+
+  </div>
+<section class="gallery">
+  <h2>Customer Gallery</h2>
+
+
+  <div class="gallery-dropdown">
+    <div class="gallery-btn" onclick="toggleGallery()">
+      View Gallery ⌄
+    </div>
+
+  
+    <div class="gallery-content" id="galleryContent">
+      <img src="image1.jpg" alt="Gallery Image 1">
+      <img src="image2.webp" alt="Gallery Image 2">
+      <img src="image3.jpg" alt="Gallery Image 3">
+      <img src="image4.jpg" alt="Gallery Image 3">
+      <img src="image5.jpg" alt="Gallery Image 3">
+      <img src="image6.jpg" alt="Gallery Image 3">
+    </div>
+  </div>
+
+  <section class="contact">
+  <h2>Contact Us</h2>
+
+  <input type="email" placeholder="Email" />
+  <textarea placeholder="Message"></textarea>
+  <button>Send</button>
+</section>
+
+<section class="about">
+  <h2>Our Ethos</h2>
+  <p>Ethically sourced, sustainably crafted jewellery.</p>
+</section>
+
+<section class="cart">
+  <h2>Your Cart</h2>
+  <div id="cartItems"></div>
+</section>
+<button class="icon-btn">
+  <i class="fa-solid fa-cart-shopping"></i>
+  Add to Cart
+</button>
+
+  <p>Tag @kilangi to get featured</p>
+</section>
+
+
+
+    <section class="gift">
+      <h4>Make it extra special</h4>
+      <button class="dark-btn">Shop Under ₹10000</button>
+    </section>
+
+    
+    <footer>
+      © 2025 Kilangi Jewellery
+    </footer>
+
+  </div>
+</body>
+
+</html>
